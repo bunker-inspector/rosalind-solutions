@@ -12,3 +12,13 @@ def bp_counts(sequence):
         counts[character] += 1
 
     return counts
+
+def rev_complement(sequence):
+    complements = {
+        'A' : 'T',
+        'C' : 'G',
+        'G' : 'C',
+        'T' : 'A'
+        }
+
+    return ''.join([complements[i] for i in sequence[::-1]])
