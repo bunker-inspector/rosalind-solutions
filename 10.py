@@ -12,5 +12,3 @@ if __name__ == '__main__':
             possible_rna_string_ct %= 1000000
 
         print possible_rna_string_ct
-
-

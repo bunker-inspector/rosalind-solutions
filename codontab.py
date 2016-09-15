@@ -1,4 +1,7 @@
-STANDARD_CODON_TABLE = {
+DNA_START_CODON = 'ATG'
+DNA_STOP_CODONS = ['TAA','TGA','TAG']
+
+STD_DNA_CODON_TAB = {
 	'TTT' : 'F',
 	'TCT' : 'S',
 	'TAT' : 'Y',
@@ -64,6 +67,10 @@ STANDARD_CODON_TABLE = {
 	'GAG' : 'E',
 	'GGG' : 'G'
 }
+
+RNA_START_CODON = 'AUG'
+RNA_STOP_CODONS = ['UAA','UGA','UAG']
+
 
 STD_RNA_CODON_TAB = {
 	'UUU' : 'F',
