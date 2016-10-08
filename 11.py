@@ -1,7 +1,7 @@
 from masstab import MASS_TABLE
 
 if __name__ == '__main__':
-    with open('data/10.dat', 'r') as data_file:
+    with open('data/11.dat', 'r') as data_file:
         protein_string = data_file.readline().strip()
 
         weight = 0.0

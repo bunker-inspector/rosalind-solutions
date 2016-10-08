@@ -1,4 +1,7 @@
-STANDARD_CODON_TABLE = {
+DNA_START_CODON = 'ATG'
+DNA_STOP_CODONS = ['TAA','TGA','TAG']
+
+STD_DNA_CODON_TAB = {
 	'TTT' : 'F',
 	'TCT' : 'S',
 	'TAT' : 'Y',
