@@ -59,6 +59,14 @@ class FastaReader():
     def close(self):
 	self._handle.close()
 
+def parse_fasta(data):
+    return map(lambda line: (line[:line.find('\n')], line[line.find('\n'):].replace('\n', '')), data.split('\n>'))
+
+def fasta_q_to_a(data):
+    split_dat = data.strip().split("\n\n")
+
+    print split_dat
+
 def parse_http_fasta(uri):
     return map(lambda line: (line[:line.find('\n')], line[line.find('\n'):].replace('\n', '')), urllib2.urlopen(uri).read().split('\n>'))
 
