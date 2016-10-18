@@ -25,6 +25,16 @@ def rev_complement(sequence):
 
     return ''.join([complements[i] for i in sequence[::-1]])
 
+def hamming_dist(a, b):
+    if len(a) != len(b):
+        return -1
+    else:
+        result = 0
+        for i in range(len(a)):
+            if a[i] != b[i]:
+                result += 1
+        return result
+
 def translate(seq):
     translated = ''
 
