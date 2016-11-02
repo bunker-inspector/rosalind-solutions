@@ -6,6 +6,7 @@ class FastaReader():
 
     def __init__(self, filename):
         self._handle = open(filename, 'r')
+
     def __init__(self, filename):
         self._handle = open(filename, 'r')
         self._header, self._seq = '', ''
@@ -69,5 +70,3 @@ def fasta_q_to_a(data):
 
 def parse_http_fasta(uri):
     return map(lambda line: (line[:line.find('\n')], line[line.find('\n'):].replace('\n', '')), urllib2.urlopen(uri).read().split('\n>'))
-
-
