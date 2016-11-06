@@ -61,7 +61,7 @@ class FastaReader():
 	self._handle.close()
 
 def parse_fasta(data):
-    return map(lambda line: (line[:line.find('\n')], line[line.find('\n'):].replace('\n', '')), data.split('\n>'))
+    return map(lambda line: (line[:line.find('\n')], line[line.find('\n'):].replace('\n', '')), data[1:].split('\n>'))
 
 def fasta_q_to_a(data):
     split_dat = data.strip().split("\n\n")

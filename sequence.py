@@ -45,8 +45,6 @@ def edit_dist(s, t):
                                  dist[row-1][col-1] + cost)
     return dist[row][col]
 
-
-
 def hamming_dist(a, b):
     if len(a) != len(b):
         return -1
