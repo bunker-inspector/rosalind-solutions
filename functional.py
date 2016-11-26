@@ -1,5 +1,5 @@
 def partition(my_list, chunk_size, fn=lambda:None):
-    for i in (range(len(my_list) - chunk_size)):
+    for i in (range((len(my_list) - chunk_size)+1)):
         yield fn(my_list[i : i+chunk_size])
 
 def frequencies(my_list):
